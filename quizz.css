@@ -1,8 +1,5 @@
-/* General styling */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin: auto;
 }
 
 body {
@@ -10,12 +7,14 @@ body {
     line-height: 1.6;
     background-color: #f4f4f9;
     color: #333;
+    background-image: url(../images/fond2.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
 }
 
-/* Header styling */
+
 header {
     background: #0279e04f;
-    color: rgb(3, 3, 3);
     padding: 20px 0;
     text-align: center;
     box-shadow: 0 4px 8px rgb(4, 56, 135);
@@ -26,15 +25,9 @@ header h1 {
     margin-bottom: 0.5em;
 }
 
-/* Navigation styling */
-nav  {
+nav {
     display: flex;
     justify-content: center;
-    list-style: none;
-    margin: 0;
-}
-
-nav {
     margin: 0 15px;
 }
 
@@ -45,15 +38,13 @@ nav a{
     color:black;
     text-decoration: none;
     width:200px;
-    text-align: center;
-    display:inline-block; 
+    text-align: center; 
     padding:10px;
     margin:10px;
     border:1px solid rgb(161, 145, 145);
     border-radius: 10px;
 }
 
-/* Main section styling */
 main {
     max-width: 1200px;
     margin: 20px auto;
@@ -61,20 +52,6 @@ main {
     background: white;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
-
-/* Styles généraux */
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f9f9f9;
-    color: #333;
-    margin: 0;
-    padding: 0;
-    box-shadow: 5px 10px 5px rgb(201, 169, 169);
-
-}
-
-
-
 #quizz h2 {
     text-align: center;
     margin-bottom: 20px;
@@ -95,63 +72,30 @@ li {
     margin-bottom: 15px;
 }
 
-/* Styles pour le bouton */
 button {
-    background-color: #2581a8; /* Couleur de fond */
-    color: white; /* Couleur du texte */
-    border: black; /* Pas de bordure */
-    border-radius: 5px; /* Coins arrondis */
-    padding: 10px 20px; /* Espacement interne */
-    font-size: 1.2em; /* Taille de la police */
-    cursor: pointer; /* Curseur en forme de main */
-    transition: background-color 0.3s, transform 0.3s; /* Transition douce */
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 button:hover {
-    background-color: #7f857f; /* Couleur de fond au survol */
-    transform: scale(1.05); /* Agrandissement léger au survol */
+    background-color: #218838;
 }
 
-button:focus {
-    outline: none; /* Pas de contour au focus */
-}
-
-
-body {
-    background-image: url(../images/fond2.jpg);
-    background-repeat:no-repeat;
-    background-position:right top;
-    background-size: cover;
-}
-/* Footer styling */
 footer {
     text-align: center;
     padding: 20px;
-    background: #0279e04f;
-    color: rgb(20, 20, 20);
+    background: hsla(220, 64%, 74%, 0.31);
     margin-top: 50px;
-}
-
-footer p {
-    margin: 5px 0;
+    box-shadow: 0 4px 8px rgb(4, 56, 135);
 }
 
 footer a {
     color: #000000;
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
-
-
-@media (max-width: 768px) {
-    main {
-        padding: 15px;
-    }
-
-    button {
-        font-size: 1em; /* Réduire la taille de la police sur mobile */
-    }
+ 
 }
