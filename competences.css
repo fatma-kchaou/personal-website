@@ -1,8 +1,5 @@
-/* General styling */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin: auto;
 }
 
 body {
@@ -10,12 +7,14 @@ body {
     line-height: 1.6;
     background-color: #f4f4f9;
     color: #333;
+    background-image: url(../images/fond2.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
 }
 
-/* Header styling */
+
 header {
     background: #0279e04f;
-    color: rgb(3, 3, 3);
     padding: 20px 0;
     text-align: center;
     box-shadow: 0 4px 8px rgb(4, 56, 135);
@@ -26,15 +25,9 @@ header h1 {
     margin-bottom: 0.5em;
 }
 
-/* Navigation styling */
-nav  {
+nav {
     display: flex;
     justify-content: center;
-    list-style: none;
-    margin: 0;
-}
-
-nav {
     margin: 0 15px;
 }
 
@@ -45,15 +38,13 @@ nav a{
     color:black;
     text-decoration: none;
     width:200px;
-    text-align: center;
-    display:inline-block; /* the top and bottom margin/padding are respected <> display:inline. aussi il n'ajoute pas de ligne breack after the element, so the element can sit next to other elements */
+    text-align: center; 
     padding:10px;
     margin:10px;
     border:1px solid rgb(161, 145, 145);
     border-radius: 10px;
 }
 
-/* Main section styling */
 main {
     max-width: 1200px;
     margin: 20px auto;
@@ -62,7 +53,7 @@ main {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
-/* Généralement pour le tableau */
+
 table {
     width: 100%;
     border-collapse: collapse;
@@ -73,22 +64,15 @@ th, td {
     padding: 10px;
     text-align: center;
     border: 1px solid #ddd;
-}
-
-th {
     background-color: #f2f2f2;
-    font-weight: bold;
 }
 
-/* Style pour les images dans le tableau */
 td img {
     width: 150px;
-    height: 150px;
-    object-fit: contain; /* Garde la proportion des images */
-    border-radius: 10px; /* Coins arrondis pour une apparence plus douce */
+    height: 100px;
+    border-radius: 10px;
 }
 
-/* Style pour les titres des sections dans le tableau */
 td[colspan="3"] {
     font-size: 18px;
     font-weight: bold;
@@ -97,7 +81,6 @@ td[colspan="3"] {
     padding: 10px 0;
 }
 
-/* Ajout d'un espacement et un style de survol pour les liens */
 a {
     text-decoration: none;
     color: #007bff;
@@ -107,54 +90,19 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Style général pour l'image du logo */
-img {
-    max-width: 100%; /* Empêche l'image de dépasser la taille du conteneur */
-    height: auto;
-}
-
-
-
-
 strong {
     color: #2c81ae;
 }
-body {
-    background-image: url(../images/fond2.jpg);
-    background-repeat:no-repeat;
-    background-position:right top;
-    background-size: cover;
-}
-/* Footer styling */
+
 footer {
     text-align: center;
     padding: 20px;
-    background: #0279e04f;
-    color: rgb(20, 20, 20);
+    background: hsla(220, 64%, 74%, 0.31);
     margin-top: 50px;
-}
-
-footer p {
-    margin: 5px 0;
+    box-shadow: 0 4px 8px rgb(4, 56, 135);
 }
 
 footer a {
     color: #000000;
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
-
-/* Media queries for responsiveness */
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-    }
-
-    .social-icons {
-        flex-direction: column;
-        gap: 15px;
-    }
+ 
 }
