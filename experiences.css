@@ -1,8 +1,5 @@
-/* General styling */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin: auto; 
 }
 
 body {
@@ -10,31 +7,21 @@ body {
     line-height: 1.6;
     background-color: #f4f4f9;
     color: #333;
+    background-image: url(../images/fond2.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
 }
 
-/* Header styling */
+
 header {
     background: #0279e04f;
-    color: rgb(3, 3, 3);
     padding: 20px 0;
     text-align: center;
     box-shadow: 0 4px 8px rgb(4, 56, 135);
 }
-
-header h1 {
-    font-size: 2.5em;
-    margin-bottom: 0.5em;
-}
-
-/* Navigation styling */
-nav  {
+nav {
     display: flex;
     justify-content: center;
-    list-style: none;
-    margin: 0;
-}
-
-nav  {
     margin: 0 15px;
 }
 
@@ -45,14 +32,13 @@ nav a{
     color:black;
     text-decoration: none;
     width:200px;
-    text-align: center;
-    display:inline-block; /* the top and bottom margin/padding are respected <> display:inline. aussi il n'ajoute pas de ligne breack after the element, so the element can sit next to other elements */
+    text-align: center; 
     padding:10px;
     margin:10px;
     border:1px solid rgb(161, 145, 145);
     border-radius: 10px;
 }
-/* Main section styling */
+
 main {
     max-width: 1200px;
     margin: 20px auto;
@@ -61,14 +47,6 @@ main {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
-.experience {
-    background-color: #f4f4f4;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    box-shadow: 5px 10px 5px rgb(201, 169, 169);
-}
 .experience img{
     width: 350px;
     height: 350px;
@@ -81,50 +59,15 @@ main {
     color: #4c9eaf;
 }
 
-.experience p {
-    margin-bottom: 10px;
-}
-
-strong {
-    color: #333;
-}
-
-body {
-    background-image: url(../images/fond2.jpg);
-    background-repeat:no-repeat;
-    background-position:right top;
-    background-size: cover;
-}
-/* Footer styling */
 footer {
     text-align: center;
     padding: 20px;
-    background: #0279e04f;
-    color: rgb(20, 20, 20);
+    background: hsla(220, 64%, 74%, 0.31);
     margin-top: 50px;
-}
-
-footer p {
-    margin: 5px 0;
+    box-shadow: 0 4px 8px rgb(4, 56, 135);
 }
 
 footer a {
     color: #000000;
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
-
-/* Media queries for responsiveness */
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-    }
-
-    .social-icons {
-        flex-direction: column;
-        gap: 15px;
-    }
+ 
 }
