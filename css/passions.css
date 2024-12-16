@@ -1,0 +1,76 @@
+* {
+    margin: auto;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-image: url(../images/fond2.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+header {
+    background: #0279e04f;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgb(4, 56, 135);
+}
+header h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+nav {
+    display: flex;
+}
+nav a:hover {
+    color: #ffffff;
+}
+nav a{
+    color:black;
+    text-decoration: none;
+    width:200px;
+    text-align: center; 
+    padding:10px;
+    margin:10px;
+    border:3px solid rgb(101, 69, 69);
+    border-radius: 10px;
+}
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+
+h3{ color: #65a3d6;
+   
+}
+
+.passions{
+    display: flex;
+}
+
+.passion {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    text-align: center;
+}
+.passion img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: hsla(220, 64%, 74%, 0.31);
+    margin-top: 50px;
+    box-shadow: 0 4px 8px rgb(4, 56, 135);
+}
