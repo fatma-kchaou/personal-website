@@ -1,4 +1,6 @@
-function calculateScore() {
+ function calculateScore(event) {
+  event.preventDefault(); 
+
   var score = 0; 
   var reponseCorrectElement = document.getElementById('reponseCorrect');
   reponseCorrectElement.innerHTML = ''; 
