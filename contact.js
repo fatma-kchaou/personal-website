@@ -31,7 +31,7 @@
      const templateID = "template_59p440n"; // Remplacez par l'ID de votre modèle EmailJS
 
      // Envoi via EmailJS
-     emailjs.send(serviceID, templateID, params)
+     email.send(serviceID, templateID, params)
          .then(() => {
              // Alerte lorsque le message est envoyé avec succès
              alert("Votre message a été envoyé avec succès !");
