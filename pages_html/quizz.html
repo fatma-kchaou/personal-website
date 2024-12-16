@@ -24,7 +24,7 @@
     <main>
         <section id="quizz">
             <h2>Répondez au quiz ci-dessous :</h2>
-            <form id="quizForm" onsubmit="return calculateScore(event)">
+            <form id="quizForm" >
                 <ol>
                     <li>
                         <h3> Quel élément est utilisé pour définir un titre dans HTML ?</h3>
@@ -96,7 +96,7 @@
                         <label><input type="radio" name="q10" value="c" required> c) link</label><br>
                     </li>
                 </ol>
-                <button type="submit"  >Valider</button>
+                <button type="submit" onclick="calculateScore(event)" >Valider</button>
                 <br>
             </form>
             <h3>Résultats du Quiz</h3>
