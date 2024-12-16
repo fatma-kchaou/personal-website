@@ -3,7 +3,7 @@
  emailjs.init("8v92fuHtJyhSsG7s2"); // Remplacez par votre clé publique EmailJS
     
  // Gestion de l'envoi du formulaire
- function contacter (event) {
+ function contacter(event) {
    event.preventDefault(); // Empêche la soumission par défaut du formulaire
 
      // Récupération des valeurs du formulaire
@@ -26,11 +26,9 @@
          message: message,
      };
 
-     // Service et modèle à utiliser (à configurer dans EmailJS)
      const serviceID = "service_130wj1m"; // Remplacez par l'ID de votre service EmailJS
      const templateID = "template_59p440n"; // Remplacez par l'ID de votre modèle EmailJS
 
-     // Envoi via EmailJS
      emailjs.send(serviceID, templateID, params)
          .then(() => {
              // Alerte lorsque le message est envoyé avec succès
