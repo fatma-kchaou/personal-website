@@ -24,7 +24,7 @@
     <main>
         <section id="quizz">
             <h2>Répondez au quiz ci-dessous :</h2>
-            <form id="quizForm" onsubmit="return calculateScore(event)">
+            <form id="quizForm" >
                 <ol>
                     <li>
                         <h3> Quel propriété est utilisée pour la taille de la police d'un élément ?</h3>
@@ -96,7 +96,7 @@
                         <label><input type="radio" name="q10" value="c" > c) link</label><br>
                     </li>
                 </ol>
-                <button type="submit"  >Valider</button>
+                <button type="button" onclick="calculateScore()"  >Valider</button>
                 <br>
             </form>
             <h3>Résultats du Quiz</h3>
