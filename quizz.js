@@ -1,5 +1,4 @@
- function calculateScore(event) {
-  event.preventDefault(); 
+ function calculateScore() {
 
   var score = 0; 
   var reponseCorrectElement = document.getElementById('reponseCorrect');
@@ -65,5 +64,5 @@
   }
 
   document.getElementById('score').innerHTML = 'Votre score est : <b>' + score + ' / 10</b>';
-
+  return false;
 }
