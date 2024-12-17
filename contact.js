@@ -3,8 +3,7 @@
  emailjs.init("8v92fuHtJyhSsG7s2"); // Remplacez par votre clé publique EmailJS
     
  // Gestion de l'envoi du formulaire
- function contacter(event) {
-   event.preventDefault(); // Empêche la soumission par défaut du formulaire
+ function contacter() {
 
      // Récupération des valeurs du formulaire
      const name = document.getElementById("name").value;
@@ -40,4 +39,5 @@
              alert("Une erreur s'est produite. Réessayez.");
              console.error("Erreur :", error);
          });
+  return false;
  }
