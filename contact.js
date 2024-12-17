@@ -13,7 +13,7 @@
      const message = document.getElementById("message").value;
 
      // Vérification des champs vides
-     if (!name || !email || !subject || !message) {
+     if (name ==="" || email ==="" || subject ==="" || message ==="") {
          alert("Veuillez remplir tous les champs du formulaire.");
          return ; // Si un champ est vide, ne pas envoyer l'email
      }
